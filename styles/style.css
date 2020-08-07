@@ -1,0 +1,15 @@
+/* reset */
+
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, a, img, q, strong, i, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, 
+figure, figcaption, footer, header, nav, section, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
