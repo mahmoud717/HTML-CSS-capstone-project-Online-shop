@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
     <link href="http://db.onlinewebfonts.com/c/5d6f50ed2dde0e4ad455448f896c09f0?family=Gotham" rel="stylesheet"
         type="text/css" />
@@ -53,22 +54,87 @@
                 <h1>CamShop </h1>
                 <p>Buying And Selling Cameras Couldn't Be Simpler </p>
             </div>
-            <form class="search-form d-flex  flex-row  pb-5 justify-content-center container">
-                <select name="selector" id="section-selector">
-                    <option value="All Catagories" selected>All Catagories</option>
-                    <option value="DSLR">DSLR</option>
-                    <option value="Mirrorless">Mirrorless</option>
-                    <option value="Point And Shoot">Point And Shoot</option>
-                    <option value="Accessories">Accessories</option>
-                </select>
-                <input type="text" placeholder="What do you need ?">
-                <input type="text" placeholder="Where">
-                <button>
-                    SEARCH
-                </button>
-            </form>
+            <div class="container">
+                <form class="search-form d-flex  flex-row  pb-5 justify-content-center align-items-end">
+                    <select name="selector" id="section-selector">
+                        <option value="All Catagories" selected>All Catagories</option>
+                        <option value="DSLR">DSLR</option>
+                        <option value="Mirrorless">Mirrorless</option>
+                        <option value="Full Frame">Full Frame</option>
+                        <option value="Accessories">Accessories</option>
+                    </select>
+                    <input type="text" placeholder="What do you need ?">
+                    <input type="text" placeholder="Where">
+                    <button>
+                        SEARCH
+                    </button>
+                </form>
+            </div>
         </section>
 
+        <section id="carouselExampleControls" class="carousel slide d-none d-md-flex" data-ride="carousel">
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"><i
+                        class="fas fa-chevron-left fa-2x"></i></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"><i
+                        class="fas fa-chevron-right fa-2x"></i></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <div class="carousel-inner container h-100">
+
+                <div class="carousel-item active h-100">
+                    <div class="d-flex h-100">
+                        <img src="/styles/img/71NdnTJZu8L._AC_SL1000_.jpg" alt="">
+                        <div class="carousel-details d-flex flex-column">
+                            <h4>Canon EOS 5D Mark III 22.3 MP Full Frame </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni similique molestias
+                                quisquam
+                                voluptatibus, enim ipsa excepturi fugit consectetur quas error omnis harum voluptate
+                                possimus
+                                voluptas cumque earum nulla nobis.</p>
+                            <div>
+                                <p>by: Mahmoud Mohammad</p>
+                                <p>
+                                    Location: San francisco , CA, United States
+                                </p>
+                            </div>
+                            <div>
+                                <button>$2,499.00</button>
+                                <button><i class="fas fa-shipping-cart"></i> Purchase Details</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <div class="d-flex h-100">
+                        <img src="/styles/img/71NdnTJZu8L._AC_SL1000_.jpg" alt="">
+                        <div class="carousel-details d-flex flex-column">
+                            <h4>Canon EOS 5D Mark III 22.3 MP Full Frame </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni similique molestias
+                                quisquam
+                                voluptatibus, enim ipsa excepturi fugit consectetur quas error omnis harum voluptate
+                                possimus
+                                voluptas cumque earum nulla nobis.</p>
+                            <div>
+                                <p>by: Mahmoud Mohammad</p>
+                                <p>
+                                    Location: San francisco , CA, United States
+                                </p>
+                            </div>
+                            <div>
+                                <button>$2,499.00</button>
+                                <button><i class="fas fa-shipping-cart"></i> Purchase Details</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
     </main>
 
 
