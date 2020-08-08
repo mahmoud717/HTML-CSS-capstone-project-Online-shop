@@ -4,17 +4,89 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.5.0/css/all.css”>
+    <title>CamShop</title>
     <link href="favicon.icon" rel="icon" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link href="http://db.onlinewebfonts.com/c/5d6f50ed2dde0e4ad455448f896c09f0?family=Gotham" rel="stylesheet"
+        type="text/css" />
+    <link href="http://db.onlinewebfonts.com/c/1549fe8fd297f1e6501a3d6ad7f77394?family=Gotham+Rounded" rel="stylesheet"
+        type="text/css" />
+    <link href="http://db.onlinewebfonts.com/c/fd2bae1d67c789adf8a1ea32e081e495?family=Helvetica+Neue" rel="stylesheet"
+        type="text/css" />
+    <link href="http://db.onlinewebfonts.com/c/ad4f223f08dab24cfc81e643bb88cc66?family=Helvetica+Neue" rel="stylesheet"
+        type="text/css" />
+    <link href="http://db.onlinewebfonts.com/c/9c0ed50d4b96ac9e5bd4a7dbfe363765?family=Helvetica+Neue+WGL"
+        rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
-    <div>
-        <div>
+    <nav>
+        <div class="py-2 container-fluid container-lg d-flex justify-content-between  align-items-center">
+            <img src="/styles/img/rsz_f1661374-5032-40b7-866f-be909ca3b17c_200x200.png" alt="logo">
+            <a href="#" class="nav-btn-wine d-flex align-items-center">
+                <i class="fas fa-home"></i>
+                <p class="mb-0">HOME</p>
+            </a>
+            <a href="#" class="nav-btn d-flex align-items-center ">
+                <i class="fas fa-puzzle-piece"></i>
+                <p class="mb-0">COLLECTIONS
+                </p>
+            </a>
+            <a href="#" class="nav-btn d-flex align-items-center">
+                <i class="fas fa-shopping-cart"></i>
+                <p class="mb-0">PURCHASE LIST
+                </p>
+            </a>
+            <button id="ad-btn" class="d-none d-lg-block">
+                POST AN AD
+            </button>
+        </div>
+    </nav>
+    <main>
+        <section class="search-section d-none d-md-flex  align-items-center flex-column">
+            <div id="page-main-logo" class="d-flex flex-column align-items-center">
+                <h1>CamShop </h1>
+                <p>Buying And Selling Cameras Couldn't Be Simpler </p>
+            </div>
+            <form class="search-form d-flex  flex-row  pb-5 justify-content-center container">
+                <select name="selector" id="section-selector">
+                    <option value="All Catagories" selected>All Catagories</option>
+                    <option value="DSLR">DSLR</option>
+                    <option value="Mirrorless">Mirrorless</option>
+                    <option value="Point And Shoot">Point And Shoot</option>
+                    <option value="Accessories">Accessories</option>
+                </select>
+                <input type="text" placeholder="What do you need ?">
+                <input type="text" placeholder="Where">
+                <button>
+                    SEARCH
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

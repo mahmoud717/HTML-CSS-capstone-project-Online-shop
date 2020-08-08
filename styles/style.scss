@@ -1,0 +1,104 @@
+@import "./import";
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: $black;
+  position: fixed;
+  width: 100%;
+
+  .nav-container {
+    max-width: 85%;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  .fas {
+    margin-right: 10px;
+  }
+
+  .nav-btn-wine {
+    color: $wine;
+
+    &:hover {
+      text-decoration: none;
+      color: $wine;
+    }
+  }
+
+  .nav-btn {
+    color: $grey;
+    text-align: center;
+
+    &:hover {
+      text-decoration: none;
+      color: $grey;
+    }
+  }
+
+  #ad-btn {
+    background-color: $wine;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+  }
+}
+
+.search-section {
+  height: 50vh;
+  padding-top: 110px;
+  background-color: $wine;
+
+  #page-main-logo {
+    flex: 1;
+
+    h1 {
+      font-family: 'Grand Hotel', cursive;
+      font-size: 100px;
+      color: white;
+    }
+
+    p {
+      color: white;
+      font-family: $hel-light;
+      font-size: 20px;
+    }
+  }
+
+  .search-form {
+    width: 100%;
+    flex: 1;
+
+    * {
+      height: 50px;
+      margin-right: 3px;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+
+    select {
+      width: 20%;
+    }
+
+    input {
+      width: 30%;
+    }
+
+    button {
+      width: 10%;
+      margin-left: 10px;
+      border: none;
+      background-color: $black;
+      color: $grey;
+      padding: 0;
+      font-size: 14px;
+    }
+  }
+}

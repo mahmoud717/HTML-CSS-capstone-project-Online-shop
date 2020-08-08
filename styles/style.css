@@ -1,15 +1,187 @@
-/* reset */
+@font-face {
+  font-family: "Helvetica Neue WGL";
+  src: url("http://db.onlinewebfonts.com/t/9c0ed50d4b96ac9e5bd4a7dbfe363765.eot");
+  src: url("http://db.onlinewebfonts.com/t/9c0ed50d4b96ac9e5bd4a7dbfe363765.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/9c0ed50d4b96ac9e5bd4a7dbfe363765.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/9c0ed50d4b96ac9e5bd4a7dbfe363765.woff") format("woff"), url("http://db.onlinewebfonts.com/t/9c0ed50d4b96ac9e5bd4a7dbfe363765.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/9c0ed50d4b96ac9e5bd4a7dbfe363765.svg#Helvetica Neue WGL") format("svg");
+}
 
-html, body, div, span, iframe,
-h1, h2, h3, h4, h5, h6, p, a, img, q, strong, i, ol, ul, li,
+@font-face {
+  font-family: "Helvetica Neue regular";
+  src: url("http://db.onlinewebfonts.com/t/ad4f223f08dab24cfc81e643bb88cc66.eot");
+  src: url("http://db.onlinewebfonts.com/t/ad4f223f08dab24cfc81e643bb88cc66.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/ad4f223f08dab24cfc81e643bb88cc66.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/ad4f223f08dab24cfc81e643bb88cc66.woff") format("woff"), url("http://db.onlinewebfonts.com/t/ad4f223f08dab24cfc81e643bb88cc66.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/ad4f223f08dab24cfc81e643bb88cc66.svg#Helvetica Neue") format("svg");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("http://db.onlinewebfonts.com/t/fd2bae1d67c789adf8a1ea32e081e495.eot");
+  src: url("http://db.onlinewebfonts.com/t/fd2bae1d67c789adf8a1ea32e081e495.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/fd2bae1d67c789adf8a1ea32e081e495.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/fd2bae1d67c789adf8a1ea32e081e495.woff") format("woff"), url("http://db.onlinewebfonts.com/t/fd2bae1d67c789adf8a1ea32e081e495.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/fd2bae1d67c789adf8a1ea32e081e495.svg#Helvetica Neue") format("svg");
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("http://db.onlinewebfonts.com/t/5d6f50ed2dde0e4ad455448f896c09f0.eot");
+  src: url("http://db.onlinewebfonts.com/t/5d6f50ed2dde0e4ad455448f896c09f0.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/5d6f50ed2dde0e4ad455448f896c09f0.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/5d6f50ed2dde0e4ad455448f896c09f0.woff") format("woff"), url("http://db.onlinewebfonts.com/t/5d6f50ed2dde0e4ad455448f896c09f0.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/5d6f50ed2dde0e4ad455448f896c09f0.svg#Gotham") format("svg");
+}
+
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url("http://db.onlinewebfonts.com/t/1549fe8fd297f1e6501a3d6ad7f77394.eot");
+  src: url("http://db.onlinewebfonts.com/t/1549fe8fd297f1e6501a3d6ad7f77394.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/1549fe8fd297f1e6501a3d6ad7f77394.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/1549fe8fd297f1e6501a3d6ad7f77394.woff") format("woff"), url("http://db.onlinewebfonts.com/t/1549fe8fd297f1e6501a3d6ad7f77394.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/1549fe8fd297f1e6501a3d6ad7f77394.svg#Gotham Rounded") format("svg");
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, 
-figure, figcaption, footer, header, nav, section, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #383838;
+  position: fixed;
+  width: 100%;
+}
+
+nav .nav-container {
+  max-width: 85%;
+}
+
+nav img {
+  width: 150px;
+}
+
+nav .fas {
+  margin-right: 10px;
+}
+
+nav .nav-btn-wine {
+  color: #d35266;
+}
+
+nav .nav-btn-wine:hover {
+  text-decoration: none;
+  color: #d35266;
+}
+
+nav .nav-btn {
+  color: #888;
+  text-align: center;
+}
+
+nav .nav-btn:hover {
+  text-decoration: none;
+  color: #888;
+}
+
+nav #ad-btn {
+  background-color: #d35266;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+
+.search-section {
+  height: 50vh;
+  padding-top: 110px;
+  background-color: #d35266;
+}
+
+.search-section #page-main-logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.search-section #page-main-logo h1 {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 100px;
+  color: white;
+}
+
+.search-section #page-main-logo p {
+  color: white;
+  font-family: Helvetica Neue;
+  font-size: 20px;
+}
+
+.search-section .search-form {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.search-section .search-form * {
+  height: 50px;
+  margin-right: 3px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-section .search-form select {
+  width: 20%;
+}
+
+.search-section .search-form input {
+  width: 30%;
+}
+
+.search-section .search-form button {
+  width: 10%;
+  margin-left: 10px;
+  border: none;
+  background-color: #383838;
+  color: #888;
+  padding: 0;
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */
