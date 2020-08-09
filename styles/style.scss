@@ -71,7 +71,7 @@ nav {
 
     p {
       color: white;
-      font-family: $hel-light;
+      font-family: $Gotham-light;
       font-size: 20px;
     }
   }
@@ -87,19 +87,26 @@ nav {
       border: none;
       outline: none;
       align-self: end;
+      width: 100%;
+      margin-top: 10px;
     }
 
-    select {
-      width: 20%;
-    }
+    @media (min-width: 768px) {
+      select {
+        width: 20%;
+      }
 
-    input {
-      width: 30%;
+      input {
+        width: 30%;
+      }
+
+      button {
+        width: 10%;
+        margin-left: 10px;
+      }
     }
 
     button {
-      width: 10%;
-      margin-left: 10px;
       border: none;
       background-color: $black;
       color: $grey;
@@ -110,20 +117,215 @@ nav {
 }
 
 .carousel {
-  padding-top: 40px;
-  height: 40vh;
+  padding: 40px 0;
 
   img {
-    height: 100%;
-    margin-right: 30px;
+    height: 250px;
   }
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     background-image: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid grey;
+    align-items: center;
+    text-align: center;
 
     i {
-      color: gray;
+      color: $wine;
+    }
+  }
+
+  .carousel-btn {
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    background-color: $wine;
+    color: white;
+  }
+
+  .carousel-btn-left {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+
+  .carousel-details {
+    h4 {
+      color: $wine;
+    }
+
+    margin-left: 30px;
+
+    p {
+      span {
+        color: $grey;
+      }
+    }
+  }
+
+  .carousel-btn-right {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-left: 1px solid rgba(2, 2, 2, 0.274);
+  }
+}
+
+.main-items {
+  padding: 10px 10px 100px;
+  background-color: rgb(241, 241, 241);
+
+  .main-items-header {
+    max-width: 1140px;
+    margin: auto;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    margin-top: 80px;
+    color: $grey;
+  }
+
+  .main-items-container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+
+      .img {
+        width: 100%;
+      }
+
+      img {
+        margin-bottom: 20px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .main-items-details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        span {
+          color: $wine;
+        }
+
+        button {
+          padding: 0 5px;
+        }
+
+        .popover__wrapper {
+          position: relative;
+          display: inline-block;
+        }
+
+        .popover__content {
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          width: 150px;
+          left: -62px;
+          top: 60px;
+          transform: translate(0, 10px);
+          background-color: white;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+          border: 1px rgb(216, 216, 216) solid;
+        }
+
+        .popover__content::before {
+          position: absolute;
+          z-index: -1;
+          content: "";
+          right: calc(50% - 10px);
+          top: -11px;
+          border-style: solid;
+          border-width: 0 10px 10px 10px;
+          border-color: transparent transparent rgb(226, 226, 226) transparent;
+          transition-duration: 0.3s;
+          transition-property: transform;
+        }
+
+        .popover__wrapper:hover .popover__content {
+          z-index: 10;
+          opacity: 1;
+          visibility: visible;
+          transform: translate(0, -20px);
+          transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+        }
+
+        .popover-list {
+          li {
+            text-align: center;
+            padding: 8px 0;
+
+            a {
+              color: black;
+              text-decoration: none;
+            }
+          }
+
+          .popover-list-middle {
+            background-color: black;
+
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $black;
+  padding: 40px 0;
+
+  .footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    ul {
+      margin: 20px 0;
+
+      li {
+        a {
+          color: white;
+          padding: 15px;
+        }
+      }
+    }
+
+    div {
+      p {
+        span {
+          color: red;
+        }
+      }
+
+      a {
+        color: rgb(189, 189, 189);
+        text-decoration: none;
+      }
     }
   }
 }
