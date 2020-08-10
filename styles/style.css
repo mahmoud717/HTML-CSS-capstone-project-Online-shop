@@ -171,6 +171,12 @@ nav {
   top: 0;
 }
 
+@media (max-width: 768px) {
+  nav {
+    font-size: 14px;
+  }
+}
+
 nav .nav-container {
   max-width: 85%;
 }
@@ -180,7 +186,13 @@ nav img {
 }
 
 nav .fas {
-  margin-right: 10px;
+  margin-right: 3px;
+}
+
+@media (min-width: 768px) {
+  nav .fas {
+    margin-right: 10px;
+  }
 }
 
 nav .nav-btn-wine {
@@ -214,12 +226,6 @@ nav #ad-btn {
 .search-section {
   padding-top: 110px;
   background-color: #d35266;
-}
-
-@media (min-width: 768px) {
-  .search-section {
-    height: 60vh;
-  }
 }
 
 .search-section #page-main-logo {
@@ -396,20 +402,23 @@ nav #ad-btn {
 }
 
 .main-items .main-items-container .card .img {
-  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.main-items .main-items-container .card img {
-  margin-bottom: 20px;
+.main-items .main-items-container .card .img img {
   width: 100%;
+  margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .main-items .main-items-container .card .main-items-details {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

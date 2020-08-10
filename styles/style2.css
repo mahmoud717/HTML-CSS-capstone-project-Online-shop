@@ -171,6 +171,12 @@ nav {
   top: 0;
 }
 
+@media (max-width: 768px) {
+  nav {
+    font-size: 14px;
+  }
+}
+
 nav .nav-container {
   max-width: 85%;
 }
@@ -180,7 +186,13 @@ nav img {
 }
 
 nav .fas {
-  margin-right: 10px;
+  margin-right: 3px;
+}
+
+@media (min-width: 768px) {
+  nav .fas {
+    margin-right: 10px;
+  }
 }
 
 nav .nav-btn-wine {

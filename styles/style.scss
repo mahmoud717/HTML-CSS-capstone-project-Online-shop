@@ -11,6 +11,10 @@ nav {
   z-index: 100000000000;
   top: 0;
 
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
   .nav-container {
     max-width: 85%;
   }
@@ -20,7 +24,11 @@ nav {
   }
 
   .fas {
-    margin-right: 10px;
+    @media (min-width: 768px) {
+      margin-right: 10px;
+    }
+
+    margin-right: 3px;
   }
 
   .nav-btn-wine {
@@ -53,10 +61,6 @@ nav {
 }
 
 .search-section {
-  @media (min-width: 768px) {
-    height: 60vh;
-  }
-
   padding-top: 110px;
   background-color: $wine;
 
@@ -213,17 +217,18 @@ nav {
       margin-top: 30px;
 
       .img {
-        width: 100%;
-      }
+        flex: 1;
+        margin: auto;
+        display: flex;
 
-      img {
-        margin-bottom: 20px;
-        width: 100%;
-        object-fit: cover;
+        img {
+          width: 100%;
+          margin: auto;
+          object-fit: cover;
+        }
       }
 
       .main-items-details {
-        flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
