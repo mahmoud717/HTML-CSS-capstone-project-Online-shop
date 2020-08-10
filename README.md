@@ -1,28 +1,39 @@
-![Hireable](https://img.shields.io/badge/Hireable-yes-success)
+!![Hireable](https://img.shields.io/badge/Hireable-yes-success)
 
 ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
+# Online shop (index and search page) - Built time 16 hours
 
-# Design Teardown project: replica of The Next Web website
+> This is a capstone/exam project for the [Microverse](https://www.microverse.org) module HTML/CSS. It is a Crafts(handmades) website using HTML, CSS3/SCSS, Bootstrap, and Font awesome.
 
-> This is a TNW homepage replica using HTML, CSS3 and media queriers.
+## Watch a video presentation of the project [here](https://www.loom.com/share/1ecb819a678e4b3f8681da87415597cf). The website is built using this [mockup](https://www.behance.net/gallery/24796463/ZATTIX)
 
-## Screenshots of our website
+## Screenshot of the index page
 
-![screenshot](./.github/app-screenshot.png)
+![screenshot](./.github/app-screenshot-index.png)
 
-## You can view the [original website here](https://thenextweb.com/)
+## Screenshot of the search page
 
-The project is built using Html and Css with an extensive use of css proprieties and media queries.
+![screenshot](./.github/app-screenshot-search.png)
+
+The project is built using HTML and CSS/SCSS with an extensive use of the grid and flex propreties. I used all SCSS core functionality: variables, mixins and color functions.
 
 ## Built With
 
 - HTML
-- CSS3
+- CSS3/SCSS
+- Bootstrap
 - Font awesome icons
+- Webhint/Stylelint linters
+- NPM scripts for testing and running the SCSS changes
+
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/mahmoud717/microverse-TNW-clone/d3c713291146338f016340b23ea6f8d56fd53c59/index.html)
+[Live Demo index page](https://raw.githack.com/mahmoud717/HTML-CSS-capstone-project-Online-shop/development-branch/index.html)
+
+[Live Demo search page](https://raw.githack.com/mahmoud717/HTML-CSS-capstone-project-Online-shop/development-branch/search.html)
+
+(You can also navigate between pages using the navigation links and the search form.)
 
 ## To get a local copy up and running follow these simple example steps.
 
@@ -39,14 +50,7 @@ Clone the project locally.
 
 Install and run a live server plugin on you IDE/Text editor and run it from the root directory.
 
-## Authors
-
-👤 **Cristian Viorel Ceamatu**
-
-- Github: [@githubhandle](https://github.com/cristianCeamatu)
-- Twitter: [@twitterhandle](https://twitter.com/CeamatuV)
-- Linkedin: [linkedin](https://www.linkedin.com/in/ceamatu-cristian-viorel-7a5469136/)
-
+## Author
 👤 **Mahmoud Mohammad**
 
 - Github: [@githubhandle](https://github.com/mahmoud717)
