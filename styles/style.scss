@@ -109,9 +109,17 @@ nav {
     button {
       border: none;
       background-color: $black;
-      color: $grey;
       padding: 0;
-      font-size: 14px;
+
+      a {
+        font-size: 14px;
+        color: $grey;
+        text-decoration: none;
+
+        &:checked {
+          color: $grey;
+        }
+      }
     }
   }
 }

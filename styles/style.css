@@ -276,9 +276,17 @@ nav #ad-btn {
 .search-section .search-form button {
   border: none;
   background-color: #383838;
-  color: #888;
   padding: 0;
+}
+
+.search-section .search-form button a {
   font-size: 14px;
+  color: #888;
+  text-decoration: none;
+}
+
+.search-section .search-form button a:checked {
+  color: #888;
 }
 
 .carousel {
