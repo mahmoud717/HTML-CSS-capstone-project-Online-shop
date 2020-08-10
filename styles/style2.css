@@ -163,7 +163,12 @@ a {
   text-decoration: none;
 }
 
+h4 {
+  font-family: "Gotham";
+}
+
 nav {
+  font-family: "Gotham Rounded";
   background-color: #383838;
   position: fixed;
   width: 100%;
@@ -297,6 +302,7 @@ nav #ad-btn {
 
 .hero .side-bar {
   background-color: #eeeded;
+  font-family: "Gotham Rounded";
   padding: 20px 20px 20px 20px;
   width: 25%;
   border-right: 1px solid #d4d4d4;
@@ -390,6 +396,7 @@ nav #ad-btn {
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4;
+  font-family: "Gotham Rounded";
   margin-left: 30px;
 }
 

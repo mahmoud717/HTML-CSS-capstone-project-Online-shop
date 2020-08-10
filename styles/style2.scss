@@ -4,7 +4,12 @@ a {
   text-decoration: none;
 }
 
+h4 {
+  font-family: $Gotham-b;
+}
+
 nav {
+  font-family: $Gotham-light;
   background-color: $black;
   position: fixed;
   width: 100%;
@@ -131,6 +136,7 @@ nav {
 .hero {
   .side-bar {
     background-color: #eeeded;
+    font-family: $Gotham-light;
     padding: 20px 20px 20px 20px;
     width: 25%;
     border-right: 1px solid rgb(212, 212, 212);
@@ -203,6 +209,7 @@ nav {
 
       .main-section-details {
         flex: 4;
+        font-family: $Gotham-light;
 
         h4 {
           color: $wine;

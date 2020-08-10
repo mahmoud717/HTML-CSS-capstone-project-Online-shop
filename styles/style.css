@@ -163,7 +163,12 @@ a {
   text-decoration: none;
 }
 
+h4 {
+  font-family: "helvetica Neue WGL";
+}
+
 nav {
+  font-family: "Gotham Rounded";
   background-color: #383838;
   position: fixed;
   width: 100%;
@@ -226,6 +231,7 @@ nav #ad-btn {
 .search-section {
   padding-top: 110px;
   background-color: #d35266;
+  font-family: "Gotham Rounded";
 }
 
 .search-section #page-main-logo {
@@ -297,6 +303,8 @@ nav #ad-btn {
 
 .carousel {
   padding: 40px 0;
+  font-family: "helvetica Neue regular";
+  color: #383838;
 }
 
 .carousel img {
@@ -429,6 +437,12 @@ nav #ad-btn {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  font-family: "Gotham Rounded";
+}
+
+.main-items .main-items-container .card .main-items-details h6 {
+  font-family: "Gotham";
+  color: #383838;
 }
 
 .main-items .main-items-container .card .main-items-details span {
