@@ -65,68 +65,39 @@ nav {
   }
 }
 
-.search-section {
-  padding-top: 80px;
-  background-color: $wine;
+footer {
+  background-color: $black;
+  padding: 40px 0;
 
-  #page-main-logo {
-    flex: 1;
+  .footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 
-    h1 {
-      font-family: 'Grand Hotel', cursive;
-      font-size: 60px;
-      color: white;
-    }
-
-    p {
-      color: white;
-      font-family: $Gotham-light;
-      font-size: 15px;
-    }
-  }
-
-  .search-form {
-    width: 100%;
-    flex: 1;
-
-    * {
-      height: 50px;
-      margin-right: 3px;
-      padding: 10px;
-      border: none;
-      outline: none;
-      align-self: end;
-      width: 100%;
-      margin-top: 10px;
-    }
-
-    @media (min-width: 768px) {
-      select {
-        width: 20%;
+    div {
+      p {
+        span {
+          color: red;
+        }
       }
-
-      input {
-        width: 30%;
-      }
-
-      button {
-        width: 10%;
-        margin-left: 10px;
-      }
-    }
-
-    button {
-      border: none;
-      background-color: $black;
-      padding: 0;
 
       a {
-        font-size: 14px;
-        color: $grey;
+        color: rgb(189, 189, 189);
         text-decoration: none;
+      }
+    }
 
-        &:checked {
-          color: $grey;
+    ul {
+      margin: 20px 0;
+
+      li {
+        a {
+          color: white;
+          padding: 15px;
         }
       }
     }
@@ -237,40 +208,66 @@ nav {
   }
 }
 
-footer {
-  background-color: $black;
-  padding: 40px 0;
+.search-section {
+  padding-top: 80px;
+  background-color: $wine;
 
-  .footer-container {
-    max-width: 1140px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  #page-main-logo {
+    flex: 1;
 
-    ul {
-      margin: 20px 0;
-
-      li {
-        a {
-          color: white;
-          padding: 15px;
-        }
-      }
+    h1 {
+      font-family: 'Grand Hotel', cursive;
+      font-size: 60px;
+      color: white;
     }
 
-    div {
-      p {
-        span {
-          color: red;
-        }
+    p {
+      color: white;
+      font-family: $Gotham-light;
+      font-size: 15px;
+    }
+  }
+
+  .search-form {
+    width: 100%;
+    flex: 1;
+
+    * {
+      height: 50px;
+      margin-right: 3px;
+      padding: 10px;
+      border: none;
+      outline: none;
+      align-self: end;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    @media (min-width: 768px) {
+      select {
+        width: 20%;
+      }
+
+      input {
+        width: 30%;
       }
 
       a {
-        color: rgb(189, 189, 189);
-        text-decoration: none;
+        width: 10%;
+      }
+    }
+
+    a {
+      margin: 10px 0 0 10px;
+      padding: 0;
+      border: none;
+      background-color: $black;
+      font-size: 14px;
+      color: $grey;
+      text-decoration: none;
+
+      &:checked {
+        color: $grey;
       }
     }
   }

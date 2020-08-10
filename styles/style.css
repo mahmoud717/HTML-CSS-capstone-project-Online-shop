@@ -113,7 +113,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: inherit;
   vertical-align: baseline;
 }
 
@@ -164,11 +164,11 @@ a {
 }
 
 h4 {
-  font-family: "helvetica Neue WGL";
+  font-family: "helvetica Neue WGL", arial, helvetica, sans-serif;
 }
 
 nav {
-  font-family: "Gotham Rounded";
+  font-family: "Gotham Rounded", arial, helvetica, sans-serif;
   background-color: #383838;
   position: fixed;
   width: 100%;
@@ -228,16 +228,58 @@ nav #ad-btn {
   border-radius: 5px;
 }
 
+footer {
+  background-color: #383838;
+  padding: 40px 0;
+}
+
+footer .footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+}
+
+footer .footer-container div p span {
+  color: red;
+}
+
+footer .footer-container div a {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+footer .footer-container ul {
+  margin: 20px 0;
+}
+
+footer .footer-container ul li a {
+  color: white;
+  padding: 15px;
+}
+
 .search-section {
   padding-top: 110px;
   background-color: #d35266;
-  font-family: "Gotham Rounded";
+  font-family: "Gotham Rounded", arial, helvetica, sans-serif;
 }
 
 .search-section #page-main-logo {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .search-section #page-main-logo h1 {
@@ -248,15 +290,15 @@ nav #ad-btn {
 
 .search-section #page-main-logo p {
   color: white;
-  font-family: "Gotham Rounded";
+  font-family: "Gotham Rounded", arial, helvetica, sans-serif;
   font-size: 20px;
 }
 
 .search-section .search-form {
   width: 100%;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .search-section .search-form * {
@@ -266,8 +308,8 @@ nav #ad-btn {
   border: none;
   outline: none;
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  -ms-grid-row-align: end;
+  align-self: end;
   width: 100%;
   margin-top: 10px;
 }
@@ -276,34 +318,33 @@ nav #ad-btn {
   .search-section .search-form select {
     width: 20%;
   }
+
   .search-section .search-form input {
     width: 30%;
   }
-  .search-section .search-form button {
+
+  .search-section .search-form a {
     width: 10%;
-    margin-left: 10px;
   }
 }
 
-.search-section .search-form button {
+.search-section .search-form a {
+  margin: 10px 0 0 10px;
+  padding: 0;
   border: none;
   background-color: #383838;
-  padding: 0;
-}
-
-.search-section .search-form button a {
   font-size: 14px;
   color: #888;
   text-decoration: none;
 }
 
-.search-section .search-form button a:checked {
+.search-section .search-form a:checked {
   color: #888;
 }
 
 .carousel {
   padding: 40px 0;
-  font-family: "helvetica Neue regular";
+  font-family: "helvetica Neue regular", arial, helvetica, sans-serif;
   color: #383838;
 }
 
@@ -320,13 +361,13 @@ nav #ad-btn {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 50%;
   border: 1px solid grey;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -385,14 +426,14 @@ nav #ad-btn {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
 
 @media (max-width: 768px) {
   .main-items .main-items-container {
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 }
@@ -404,15 +445,15 @@ nav #ad-btn {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-top: 30px;
 }
 
 .main-items .main-items-container .card .img {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,7 +464,7 @@ nav #ad-btn {
   width: 100%;
   margin: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .main-items .main-items-container .card .main-items-details {
@@ -432,16 +473,16 @@ nav #ad-btn {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  font-family: "Gotham Rounded";
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-family: "Gotham Rounded", arial, helvetica, sans-serif;
 }
 
 .main-items .main-items-container .card .main-items-details h6 {
-  font-family: "Gotham";
+  font-family: "Gotham", arial, helvetica, sans-serif;
   color: #383838;
 }
 
@@ -466,10 +507,10 @@ nav #ad-btn {
   left: -62px;
   top: 60px;
   -webkit-transform: translate(0, 10px);
-          transform: translate(0, 10px);
+  transform: translate(0, 10px);
   background-color: white;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   border: 1px #d8d8d8 solid;
 }
 
@@ -483,7 +524,7 @@ nav #ad-btn {
   border-width: 0 10px 10px 10px;
   border-color: transparent transparent #e2e2e2 transparent;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -495,7 +536,7 @@ nav #ad-btn {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translate(0, -20px);
-          transform: translate(0, -20px);
+  transform: translate(0, -20px);
   -webkit-transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
   transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
 }
@@ -517,46 +558,3 @@ nav #ad-btn {
 .main-items .main-items-container .card .main-items-details .popover-list .popover-list-middle a {
   color: white;
 }
-
-footer {
-  background-color: #383838;
-  padding: 40px 0;
-}
-
-footer .footer-container {
-  max-width: 1140px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-}
-
-footer .footer-container ul {
-  margin: 20px 0;
-}
-
-footer .footer-container ul li a {
-  color: white;
-  padding: 15px;
-}
-
-footer .footer-container div p span {
-  color: red;
-}
-
-footer .footer-container div a {
-  color: #bdbdbd;
-  text-decoration: none;
-}
-/*# sourceMappingURL=style.css.map */

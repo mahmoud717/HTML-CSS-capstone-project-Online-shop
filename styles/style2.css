@@ -113,7 +113,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: inherit;
   vertical-align: baseline;
 }
 
@@ -164,11 +164,11 @@ a {
 }
 
 h4 {
-  font-family: "Gotham";
+  font-family: "Gotham", arial, helvetica, sans-serif;
 }
 
 nav {
-  font-family: "Gotham Rounded";
+  font-family: "Gotham Rounded", arial, helvetica, sans-serif;
   background-color: #383838;
   position: fixed;
   width: 100%;
@@ -228,81 +228,51 @@ nav #ad-btn {
   border-radius: 5px;
 }
 
-.search-section {
-  padding-top: 80px;
-  background-color: #d35266;
-}
-
-.search-section #page-main-logo {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.search-section #page-main-logo h1 {
-  font-family: 'Grand Hotel', cursive;
-  font-size: 60px;
-  color: white;
-}
-
-.search-section #page-main-logo p {
-  color: white;
-  font-family: "Gotham Rounded";
-  font-size: 15px;
-}
-
-.search-section .search-form {
-  width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.search-section .search-form * {
-  height: 50px;
-  margin-right: 3px;
-  padding: 10px;
-  border: none;
-  outline: none;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  width: 100%;
-  margin-top: 10px;
-}
-
-@media (min-width: 768px) {
-  .search-section .search-form select {
-    width: 20%;
-  }
-  .search-section .search-form input {
-    width: 30%;
-  }
-  .search-section .search-form button {
-    width: 10%;
-    margin-left: 10px;
-  }
-}
-
-.search-section .search-form button {
-  border: none;
+footer {
   background-color: #383838;
-  padding: 0;
+  padding: 40px 0;
 }
 
-.search-section .search-form button a {
-  font-size: 14px;
-  color: #888;
+footer .footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+}
+
+footer .footer-container div p span {
+  color: red;
+}
+
+footer .footer-container div a {
+  color: #bdbdbd;
   text-decoration: none;
 }
 
-.search-section .search-form button a:checked {
-  color: #888;
+footer .footer-container ul {
+  margin: 20px 0;
+}
+
+footer .footer-container ul li a {
+  color: white;
+  padding: 15px;
 }
 
 .hero .side-bar {
   background-color: #eeeded;
-  font-family: "Gotham Rounded";
+  font-family: "Gotham Rounded", arial, helvetica, sans-serif;
   padding: 20px 20px 20px 20px;
   width: 25%;
   border-right: 1px solid #d4d4d4;
@@ -331,38 +301,38 @@ nav #ad-btn {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3fr;
   margin: 30px 0;
 }
 
 @media (max-width: 1200px) {
   .hero .main-section .main-section-container {
     -ms-grid-columns: 1fr 2fr;
-        grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
   }
 }
 
 @media (max-width: 1000px) {
   .hero .main-section .main-section-container {
     -ms-grid-columns: 3fr 5fr;
-        grid-template-columns: 3fr 5fr;
+    grid-template-columns: 3fr 5fr;
   }
 }
 
 @media (max-width: 768px) {
   .hero .main-section .main-section-container {
     -ms-grid-columns: 3fr 5fr;
-        grid-template-columns: 3fr 5fr;
+    grid-template-columns: 3fr 5fr;
   }
 }
 
 .hero .main-section .main-section-container img {
   width: 100%;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: auto;
 }
 
@@ -394,9 +364,9 @@ nav #ad-btn {
 
 .hero .main-section .main-section-container .main-section-details {
   -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
-  font-family: "Gotham Rounded";
+  -ms-flex: 4;
+  flex: 4;
+  font-family: "Gotham Rounded", arial, helvetica, sans-serif;
   margin-left: 30px;
 }
 
@@ -424,45 +394,73 @@ nav #ad-btn {
   color: #888;
 }
 
-footer {
+.search-section {
+  padding-top: 80px;
+  background-color: #d35266;
+}
+
+.search-section #page-main-logo {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.search-section #page-main-logo h1 {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 60px;
+  color: white;
+}
+
+.search-section #page-main-logo p {
+  color: white;
+  font-family: "Gotham Rounded", arial, helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.search-section .search-form {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.search-section .search-form * {
+  height: 50px;
+  margin-right: 3px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  -ms-flex-item-align: end;
+  -ms-grid-row-align: end;
+  align-self: end;
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .search-section .search-form select {
+    width: 20%;
+  }
+
+  .search-section .search-form input {
+    width: 30%;
+  }
+
+  .search-section .search-form a {
+    width: 10%;
+  }
+}
+
+.search-section .search-form a {
+  margin: 10px 0 0 10px;
+  padding: 0;
+  border: none;
   background-color: #383838;
-  padding: 40px 0;
-}
-
-footer .footer-container {
-  max-width: 1140px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-}
-
-footer .footer-container ul {
-  margin: 20px 0;
-}
-
-footer .footer-container ul li a {
-  color: white;
-  padding: 15px;
-}
-
-footer .footer-container div p span {
-  color: red;
-}
-
-footer .footer-container div a {
-  color: #bdbdbd;
+  font-size: 14px;
+  color: #888;
   text-decoration: none;
 }
-/*# sourceMappingURL=style2.css.map */
+
+.search-section .search-form a:checked {
+  color: #888;
+}
