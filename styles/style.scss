@@ -108,6 +108,66 @@ footer {
   }
 }
 
+.carousel {
+  padding: 40px 0;
+  font-family: $hel-normal;
+  color: $black;
+
+  img {
+    height: 250px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid grey;
+    align-items: center;
+    text-align: center;
+
+    i {
+      color: $wine;
+    }
+  }
+
+  .carousel-btn {
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    background-color: $wine;
+    color: white;
+  }
+
+  .carousel-btn-left {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+
+  .carousel-details {
+    h4 {
+      color: $wine;
+    }
+
+    margin-left: 30px;
+
+    p {
+      span {
+        color: $grey;
+      }
+    }
+  }
+
+  .carousel-btn-right {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-left: 1px solid rgba(2, 2, 2, 0.274);
+  }
+}
+
 .search-section {
   padding-top: 110px;
   background-color: $wine;
@@ -176,66 +236,6 @@ footer {
         color: $grey;
       }
     }
-  }
-}
-
-.carousel {
-  padding: 40px 0;
-  font-family: $hel-normal;
-  color: $black;
-
-  img {
-    height: 250px;
-  }
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-image: none;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px solid grey;
-    align-items: center;
-    text-align: center;
-
-    i {
-      color: $wine;
-    }
-  }
-
-  .carousel-btn {
-    border: none;
-    outline: none;
-    padding: 8px 15px;
-    background-color: $wine;
-    color: white;
-  }
-
-  .carousel-btn-left {
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
-  }
-
-  .carousel-details {
-    h4 {
-      color: $wine;
-    }
-
-    margin-left: 30px;
-
-    p {
-      span {
-        color: $grey;
-      }
-    }
-  }
-
-  .carousel-btn-right {
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-    border-left: 1px solid rgba(2, 2, 2, 0.274);
   }
 }
 
