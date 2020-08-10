@@ -190,6 +190,10 @@ nav img {
   width: 150px;
 }
 
+nav .logo-sm {
+  width: 40px;
+}
+
 nav .fas {
   margin-right: 3px;
 }
@@ -394,6 +398,12 @@ footer .footer-container ul li a {
   color: #888;
 }
 
+@media (max-width: 576px) {
+  .hero .main-section .main-section-container .main-section-details > p {
+    display: none;
+  }
+}
+
 .search-section {
   padding-top: 80px;
   background-color: #d35266;
@@ -415,6 +425,7 @@ footer .footer-container ul li a {
   color: white;
   font-family: "Gotham Rounded", arial, helvetica, sans-serif;
   font-size: 15px;
+  text-align: center;
 }
 
 .search-section .search-form {
@@ -459,6 +470,12 @@ footer .footer-container ul li a {
   font-size: 14px;
   color: #888;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .search-section .search-form a {
+    margin-left: 0;
+  }
 }
 
 .search-section .search-form a:checked {

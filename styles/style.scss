@@ -28,6 +28,10 @@ nav {
     width: 150px;
   }
 
+  .logo-sm {
+    width: 40px;
+  }
+
   .fas {
     @media (min-width: 768px) {
       margin-right: 10px;
@@ -122,6 +126,7 @@ footer {
       color: white;
       font-family: $Gotham-light;
       font-size: 20px;
+      text-align: center;
     }
   }
 
@@ -155,6 +160,10 @@ footer {
     }
 
     a {
+      @media (max-width: 768px) {
+        margin-left: 0;
+      }
+
       margin: 10px 0 0 10px;
       padding: 0;
       border: none;

@@ -27,12 +27,15 @@
 <body>
     <nav>
         <div class="py-2 container-fluid container-lg d-flex justify-content-between  align-items-center">
-            <img src="styles/img/rsz_f1661374-5032-40b7-866f-be909ca3b17c_200x200.png" alt="logo">
+            <img class="d-none d-sm-flex" src="styles/img/rsz_f1661374-5032-40b7-866f-be909ca3b17c_200x200.png"
+                alt="logo">
+            <img class="logo-sm d-flex d-sm-none" src="styles/img/rsz_0e6649ea-c1e6-496d-bd0e-ab8255d62214_200x200.png"
+                alt="logo">
             <a href="#" class="nav-btn-wine d-flex align-items-center">
                 <i class="fas fa-home"></i>
                 <p class="mb-0">HOME</p>
             </a>
-            <a href="#" class="nav-btn d-flex align-items-center ">
+            <a href="#" class="nav-btn d-none d-sm-flex align-items-center ">
                 <i class="fas fa-puzzle-piece"></i>
                 <p class="mb-0">COLLECTIONS
                 </p>
@@ -42,7 +45,7 @@
                 <p class="mb-0">PURCHASE LIST
                 </p>
             </a>
-            <button id="ad-btn" class="d-none d-lg-block">
+            <button id="ad-btn" class="d-none d-md-block">
                 POST AN AD
             </button>
         </div>
@@ -50,7 +53,7 @@
     <main>
         <section class="search-section d-flex  align-items-center flex-column">
 
-            <div id="page-main-logo" class="d-flex flex-column align-items-center ">
+            <div id="page-main-logo" class="d-flex flex-column align-items-center justify-content-center ">
                 <h1>CamShop </h1>
                 <p>Buying And Selling Cameras Couldn't Be Simpler </p>
             </div>
