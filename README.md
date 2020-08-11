@@ -9,11 +9,11 @@
 
 ## Screenshot of the index page
 
-![screenshot](./.github/app-screenshot-index.png)
+![screenshot](./assets/readme-img/app-screenshot-index.png)
 
 ## Screenshot of the search page
 
-![screenshot](./.github/app-screenshot-search.png)
+![screenshot](./assets/readme-img/app-screenshot-search.png)
 
 The project is built using HTML and CSS/SCSS with an extensive use of the grid and flex propreties. I used all SCSS core functionality: variables, mixins and color functions.
 
@@ -26,6 +26,15 @@ The project is built using HTML and CSS/SCSS with an extensive use of the grid a
 - Webhint/Stylelint linters
 - NPM scripts for testing and running the SCSS changes
 
+## Used techniques
+ 
+- made a main page logo that's responsive and changes with different sizes.
+- A bootstrap Carousel on the top section of the main page to show the most wanted items.
+- in the Search section i Used flex box to give it a different layout at each screen size.
+- Used Css grid in the main section.
+- Used bootstrap cards in the Css grid to give the content a professional look.
+- inside each card i used flex box to auto align the images with the description giving it a professional look.
+- Used media queries to give the pages a responsive layout that looks good on all screen sizes.
 
 ## Live Demo
 
@@ -33,24 +42,25 @@ The project is built using HTML and CSS/SCSS with an extensive use of the grid a
 
 [Live Demo search page](https://raw.githack.com/mahmoud717/HTML-CSS-capstone-project-Online-shop/development-branch/search.html)
 
-(You can also navigate between pages using the navigation links and the search form.)
+(You can also navigate between pages using the  search form.)
 
 ## To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-Clone the project locally.
+- Clone the project locally by downloading the zip file or by the  link provided in the repo.
 
 ### Linters
-
-1. run `npm install`.
-2. run `npm run test` to check the Html and Css files.
+1. install node.js
+2. run `npm install`.
+3. run `npm run test` to check the Html and Css files.
 
 ### Deployment
 
 Install and run a live server plugin on you IDE/Text editor and run it from the root directory.
 
 ## Author
+
 👤 **Mahmoud Mohammad**
 
 - Github: [@githubhandle](https://github.com/mahmoud717)
