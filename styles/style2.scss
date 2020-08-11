@@ -1,0 +1,289 @@
+@import "./import";
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  font-family: $Gotham-b;
+}
+
+nav {
+  font-family: $Gotham-light;
+  background-color: $black;
+  position: fixed;
+  width: 100%;
+  z-index: 100000000000;
+  top: 0;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  .nav-container {
+    max-width: 85%;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  .logo-sm {
+    width: 40px;
+  }
+
+  .fas {
+    @media (min-width: 768px) {
+      margin-right: 10px;
+    }
+
+    margin-right: 3px;
+  }
+
+  .nav-btn-wine {
+    color: $wine;
+
+    &:hover {
+      text-decoration: none;
+      color: $wine;
+    }
+  }
+
+  .nav-btn {
+    color: $grey;
+    text-align: center;
+
+    &:hover {
+      text-decoration: none;
+      color: $grey;
+    }
+  }
+
+  #ad-btn {
+    background-color: $wine;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+  }
+}
+
+footer {
+  background-color: $black;
+  padding: 40px 0;
+
+  .footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    div {
+      p {
+        span {
+          color: red;
+        }
+      }
+
+      a {
+        color: rgb(189, 189, 189);
+        text-decoration: none;
+      }
+    }
+
+    ul {
+      margin: 20px 0;
+
+      li {
+        a {
+          color: white;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  .side-bar {
+    background-color: #eeeded;
+    font-family: $Gotham-light;
+    padding: 20px 20px 20px 20px;
+    width: 25%;
+    border-right: 1px solid rgb(212, 212, 212);
+
+    p {
+      font-weight: bold;
+      margin-left: 5px;
+    }
+
+    .side-bar-separator {
+      border-bottom: 1px solid rgb(212, 212, 212);
+    }
+  }
+
+  .main-section {
+    @media (min-width: 768px) {
+      width: 75%;
+    }
+
+    padding: 40px 0;
+
+    .main-section-container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+
+      @media (max-width: 1200px) {
+        grid-template-columns: 1fr 2fr;
+      }
+
+      @media (max-width: 1000px) {
+        grid-template-columns: 3fr 5fr;
+      }
+
+      @media (max-width: 768px) {
+        grid-template-columns: 3fr 5fr;
+      }
+
+      img {
+        width: 100%;
+        flex: 1;
+        object-fit: cover;
+        margin: auto;
+      }
+
+      margin: 30px 0;
+
+      .main-section-btn {
+        border: none;
+        outline: none;
+        padding: 8px 15px;
+        background-color: $wine;
+        color: white;
+        margin-top: 10px;
+
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+
+      .main-section-btn-left {
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+      }
+
+      .main-section-btn-right {
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-left: 1px solid rgba(2, 2, 2, 0.274);
+      }
+
+      .main-section-details {
+        flex: 4;
+        font-family: $Gotham-light;
+
+        h4 {
+          color: $wine;
+
+          @media (max-width: 768px) {
+            font-size: 20px;
+          }
+        }
+
+        margin-left: 30px;
+
+        p {
+          margin-bottom: 5px;
+
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
+
+          span {
+            color: $grey;
+          }
+        }
+
+        > p {
+          @media (max-width: 576px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.search-section {
+  padding-top: 80px;
+  background-color: $wine;
+
+  #page-main-logo {
+    flex: 1;
+
+    h1 {
+      font-family: 'Grand Hotel', cursive;
+      font-size: 60px;
+      color: white;
+    }
+
+    p {
+      color: white;
+      font-family: $Gotham-light;
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+
+  .search-form {
+    width: 100%;
+    flex: 1;
+
+    * {
+      height: 50px;
+      margin-right: 3px;
+      padding: 10px;
+      border: none;
+      outline: none;
+      align-self: end;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    @media (min-width: 768px) {
+      select {
+        width: 20%;
+      }
+
+      input {
+        width: 30%;
+      }
+
+      a {
+        width: 10%;
+      }
+    }
+
+    a {
+      @media (max-width: 768px) {
+        margin-left: 0;
+      }
+
+      margin: 10px 0 0 10px;
+      padding: 0;
+      border: none;
+      background-color: $black;
+      font-size: 14px;
+      color: $grey;
+      text-decoration: none;
+
+      &:checked {
+        color: $grey;
+      }
+    }
+  }
+}
