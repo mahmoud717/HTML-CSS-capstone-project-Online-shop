@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
 # Online shop (index and search page) - Built time 16 hours
 
-> This is a capstone/exam project for the [Microverse](https://www.microverse.org) module HTML/CSS. It is a Crafts(handmades) website using HTML, CSS3/SCSS, Bootstrap, and Font awesome.
+> This is a project for the [Microverse](https://www.microverse.org) module HTML/CSS. It is a Camerashop [website using HTML, CSS3/SCSS, Bootstrap, and Font awesome.
 
 ## Watch a video presentation of the project [here](https://www.loom.com/share/277d684f83bb4885a067be4ae40a20fe). The website is built using this [mockup](https://www.behance.net/gallery/24796463/ZATTIX)
 
